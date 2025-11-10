@@ -12,6 +12,7 @@ function App() {
           <Link to="/Contato">Contato</Link>
           <br/>
           <Link to="/Produtos">Produtos</Link>
+          <Link to="/">Produtos</Link>
         </nav>
         <div style={{ textAlign: 'center' }}>
           <h1>Site em React</h1>
@@ -19,6 +20,7 @@ function App() {
         <Routes>
             <Route path="/Contato" element={<Contato />} />
             <Route path="/Produtos" element={<Produtos />} />
+            <Route path="/" element={<Produtos />} />
         </Routes>
     </Router>
   );
